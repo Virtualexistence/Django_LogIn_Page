@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Account</title>
+</head>
+<body>
+<h3>Hey there! Welcome back {{ user }}</h3>
+<h4>You've logged in successfully</h4>
+<form method="post">
+    {% csrf_token %}
+    <h5>Title</h5>
+    <input type="text" name="headfield">
+    <br>
+    <h5>Content</h5>
+    <input type="text" name="textfield">
+    <br>
+    <button type="submit">Save</button>
+
+</form>
+<button type="button"><a href="logout">Logout</a> </button>
+</body>
+</html>
